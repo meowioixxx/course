@@ -3,6 +3,6 @@ public class HelloJava{
 	//起始程式main
 	public static void main(String[] args){
 		System.out.println("Hello Java!");
-		//System.out.println 印出之後帶一換行字符//		
+		//System.out.println 印出字串之後帶一換行字符//		
 	}			
 }
