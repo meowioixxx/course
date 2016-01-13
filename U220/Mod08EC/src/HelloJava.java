@@ -7,6 +7,7 @@ public class HelloJava {
 		//快速鍵sysout   alt /
 		//命名慣例：大寫>>類別    小寫>>屬性
 		//System 預設類別 在JRE System Library(rt.jar)
+		//jar >> java Archive java壓縮檔
 	}
 
 }
