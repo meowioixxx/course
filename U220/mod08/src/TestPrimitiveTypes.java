@@ -7,7 +7,7 @@
 /**
  *ch.8  資料變數練習
  *
- * @author Administrator
+ * @author 我是吳綿綿
  */
 public class TestPrimitiveTypes {
 
