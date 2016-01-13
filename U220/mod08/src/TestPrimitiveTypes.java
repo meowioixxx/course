@@ -38,6 +38,7 @@ public class TestPrimitiveTypes {
         float e = 1.0f - 0.8f;  //IEEE 754
         //only 10進位
         //8E - 1  ==0.8
+        //容易炸記憶體位置，所以........
         double f = 1.05 - 0.9;  //IEEE 754
         //預設是double型 float需值後加f
         System.out.println("e = " + e);
