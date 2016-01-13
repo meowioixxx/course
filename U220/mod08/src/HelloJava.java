@@ -9,9 +9,10 @@
  * @author Administrator
  */
 public class HelloJava {
+
     public static void main(String[] args) {
-    //快速鍵 psvm  TAB
+        //快速鍵 psvm  TAB
         System.out.println("Hello，5509同學們");
         //尋找建議字：ex.  sys  >>>   ctrl ﹨   >>>  System        
-    }    
+    }
 }
