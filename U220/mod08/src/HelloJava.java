@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Administrator
+ * @author 我是吳綿綿
  */
 public class HelloJava {
 
