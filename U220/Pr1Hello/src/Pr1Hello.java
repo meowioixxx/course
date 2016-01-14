@@ -12,16 +12,16 @@
 public class Pr1Hello {
 
     public static void main(String[] args) {
-        byte a = -11;
-        short b = -254;
+        byte _a = -11;
+        short $b = -254;
         int i = 1;
         long j = 351687116;
-        float k = 1.0015165999991F;
+        float k = 1.0015165_999991F;
         double m = 1.0015165999991;
         System.out.println("<<基本資料型別練習>>");
         System.out.println("整數類：");
-        System.out.println("byte a = -11 >>" + a);
-        System.out.println("short b = -254 >>" + b);
+        System.out.println("byte _a = -11 >>" + _a);
+        System.out.println("short $b = -254 >>" + $b);
         System.out.println("int i = 1 >>" + i);
         System.out.println("long j = 351687116 >>" + j);
         System.out.println("浮點數類：");
