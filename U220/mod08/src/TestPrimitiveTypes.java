@@ -39,9 +39,38 @@ public class TestPrimitiveTypes {
         //only 10進位
         //8E - 1  ==0.8
         //容易炸記憶體位置，所以........
-        double f = 1.05 - 0.9;  //IEEE 754
-        //預設是double型 float需值後加f
+        double f = 1D - 8E-1;  //IEEE 754
+        //預設是double型
+        //float需值後加F  double 需值後加D  不限大小寫
+
         System.out.println("e = " + e);
         System.out.println("f = " + f);
+
+        System.out.println(010);
+        //輸入是八進位，顯示會自動轉成int 十進位;
+        //字串是參考行別(不能固定大小)
+
+        //<文字類>
+        System.out.println("文字類：");
+        char c1 = 'a';
+        char c6 = '\t'; //tab
+        char c2 = '@';
+        char c5 = '\u03a6';
+        //加上反斜線會告訴系統此為控制碼
+        //控制compiler為控制字元
+        char c3 = '我';
+        char c4 = 'φ';
+        char c7 = '\\';  //需要反斜線需要給兩個(逃脫字元)
+        //char 字元為單一字  unicode-table.com
+        //  反斜線 "\" ：控制字元
+        String c8 = "\\";
+
+        System.out.println("c6 = " + c6);
+        System.out.println("c2 = " + c2);
+        System.out.println("c5 = " + c5);
+        System.out.println("c3 = " + c3);
+        System.out.println("c4 = " + c4);
+        System.out.println("c7 = " + c7);
+        System.out.println("c8 = " + c8);
     }
 }
