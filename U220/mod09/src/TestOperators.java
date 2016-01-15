@@ -62,5 +62,18 @@ public class TestOperators {
         System.out.println(true != true); //是否不同嗎？ F
         //可以比較相不相同 不限制數字字元，但要相同型別的比較。
 
+        char data;
+        for (int i = 0; i < 26; i++) {
+            data = (char) ('a' + i);
+            System.out.print(data + " ");
+        }
+        //印出a~z
+
+        String id = "A123456789";
+        char c0 = id.charAt(0);
+        //抓出身分證字號第一碼英文
+        char c9 = id.charAt(9);
+        System.out.println("c9 = " + c9);
+        //抓出檢查碼
     }
 }
