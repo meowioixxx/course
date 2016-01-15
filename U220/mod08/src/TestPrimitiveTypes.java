@@ -72,5 +72,22 @@ public class TestPrimitiveTypes {
         System.out.println("c4 = " + c4);
         System.out.println("c7 = " + c7);
         System.out.println("c8 = " + c8);
+
+        //邏輯類
+        //java布林只有true 和 false
+        //資料大小4byte
+        boolean t1 = (1 > 2);//false
+        boolean t2 = true;
+        //c++  0為false 其他為真
+        //java為強型別 不可以用數值 只能用邏輯判斷式或者T/F
+        boolean t3 = Boolean.valueOf("true");
+        //只能用Boolean.valueOf("字串")  將字串轉成布林值
+        //C中的布林：BOOL
+        System.out.println("t1 = " + t1);
+        System.out.println("t2 = " + t2);
+        System.out.println("t3 = " + t3);
+
+        t2 = t1;
+        System.out.println("t2 = " + t2);
     }
 }
