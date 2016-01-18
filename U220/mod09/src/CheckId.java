@@ -11,6 +11,7 @@ public class CheckId {
         //輸入ID
         System.out.print("請輸入ID：");
         Scanner scan = new Scanner(System.in); //參考型別Scanner  建立物件
+        String id2 = new String("A123456789");
         String id = scan.next();//輸入字串
 
         //String id = "A123456789";
