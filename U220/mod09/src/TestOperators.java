@@ -19,7 +19,7 @@ public class TestOperators {
         //運算元型別最大是double  結果會完整表示
         System.out.println('1' + '2'); //char字碼49 + 50 = 99
         System.out.println("1" + 2); //單引號是字元，字串相加>>12
-
+        System.out.println("結果為：" + 2 + 3 / 5);
         byte a = 1, b = 1, c;
         //c = a + b;
         //兩個值(1,2)都是int型別，結果為3 型別為int，
@@ -40,10 +40,10 @@ public class TestOperators {
         //1除以2  餘數為 1
 
         byte k = 1;
+
         //k++;//k=k+1  = (byte)(k+1) 一樣都是byte型態
         //++k;//k=k+1
         //System.out.println("k = " + k);
-
         System.out.println("k = " + k++);
         //print:1  k:2
         System.out.println("k = " + ++k);
@@ -57,11 +57,44 @@ public class TestOperators {
         //-128 -1 一樣爆掉>>>印出127
 
         System.out.println('A' < 'a'); //'A'字碼為65 'a'字碼為97 TRUE
+        //型別需可相容之型別
         System.out.println(k == 127);   //最後k的確為127  TRUE
         System.out.println(true == true); //是否相同嗎？ T
         System.out.println(true != true); //是否不同嗎？ F
+        System.out.println(true != false);//是否不同嗎？ T
         //可以比較相不相同 不限制數字字元，但要相同型別的比較。
 
+        System.out.println("以下為AND &：");
+        System.out.println(true & true); //T
+
+        System.out.println(true & false); //F　　
+        System.out.println(false & true); //F
+        System.out.println(false & false);//F
+
+        System.out.println("以下為OR | ：");
+        System.out.println(true | true);//T
+        System.out.println(true | false);//T
+        System.out.println(false | true);//T
+        System.out.println(false | false);//F
+
+        System.out.println("以下為XOR ^ ：");
+        System.out.println(true ^ true);//F
+        System.out.println(true ^ false);//T
+        System.out.println(false ^ true);//T
+        System.out.println(false ^ false);//F
+
+        System.out.println("以下為NOT !：");
+        System.out.println(!true); //f
+        System.out.println(!false);//t
+
+        System.out.println("以下為&&：");
+        System.out.println(false && true);
+        //t 第一個判斷false 就會省略後面判斷，直接丟出false
+
+        System.out.println("以下為||");
+        System.out.println(true || true); //第一個true符合就直接丟true出來
+
+        //優先序：算數(先乘除後加減) > 比較 > 邏輯
         char data;
         for (int i = 0; i < 26; i++) {
             data = (char) ('a' + i);
@@ -69,6 +102,7 @@ public class TestOperators {
         }
         //印出a~z
 
+        //身分證字號起手
         String id = "A123456789";
         char c0 = id.charAt(0);
         //抓出身分證字號第一碼英文
