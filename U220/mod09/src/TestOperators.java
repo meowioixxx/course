@@ -93,7 +93,62 @@ public class TestOperators {
 
         System.out.println("以下為||");
         System.out.println(true || true); //第一個true符合就直接丟true出來
-
+        
+        //位元operators： ~ 求補數, &, |, ^
+        byte o = 6, p = 5;   //6：00000110    5：00000101  
+        System.out.println("位元運算~：" + Integer.toBinaryString(~o));  //Integer.toBinaryString(int i)  顯示二進位模式
+        System.out.println("位元運算&：" + (o&p));//顯示為預設之十進位
+        System.out.println("位元運算|：" + Integer.toBinaryString(o|p));
+        System.out.println("位元運算^：" + Integer.toBinaryString(o^p));
+        
+        byte q = 15;
+        System.out.println("q>>1 = " + (q>>1));  //除以2的1次方
+        System.out.println("q<<1 = " + (q<<1));  //乘以2的1次方
+        System.out.println("q>>2 = " + (q>>2));  //除以2的2次方
+        System.out.println("q<<2 = " + (q<<2));  //乘以2的2次方
+        
+        System.out.println("q>>>1 = " + (q>>>1));  //除以2的1次方(恆正)
+        System.out.println("q>>>2 = " + (q>>>2));  //除以2的2次方(恆正)
+        System.out.println("-q>>>1 = " + (-q>>>1));  //除以2的1次方(恆正)
+        System.out.println("-q>>>2 = " + (-q>>>2));  //除以2的2次方(恆正)
+        
+        System.out.println("-q>>1 = " + (q>>1));  //除以2的1次方
+        System.out.println("-q<<1 = " + (q<<1));  //乘以2的1次方
+        System.out.println("-q>>2 = " + (q>>2));  //除以2的2次方
+        System.out.println("-q<<2 = " + (q<<2));  //乘以2的2次方
+        
+        
+        //指派運算子
+        
+        byte n1 = 1, n2=2;
+        //n1= n1*(n1+n2)+100;
+        System.out.println("n2*=n1+n2/100 = " + (n2*=n1+n2/100));
+        
+        //三元運算子
+        int grade = 60;
+        System.out.println((grade>=60)?"Pass" :"Fail"); //如果符合條件則輸出"pass" 否則"fail"
+        
+        if(grade>=60){
+            System.out.println("pass");
+        }else{
+            System.out.println("fail");
+        }
+        
+        
+        boolean test;
+        float t = (test=false)?1:2.0F;
+        //double t也可以 (因為等號右側型別為float，可提升型別至double)
+        double s =(test = false)?'1':2.0F;
+        //'1'：會輸出成字碼去顯示
+        //不可使用"1"  因為不是字串型別
+        
+        
+        
+        System.out.println("t = " + t);
+        System.out.println((test=false)?1:2.0);
+        
+                
+        
         //優先序：算數(先乘除後加減) > 比較 > 邏輯
         char data;
         for (int i = 0; i < 26; i++) {
@@ -109,5 +164,7 @@ public class TestOperators {
         char c9 = id.charAt(9);
         System.out.println("c9 = " + c9);
         //抓出檢查碼
+        
+        
     }
 }
